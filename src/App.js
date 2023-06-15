@@ -5,16 +5,14 @@ import { Routes, Route } from "react-router-dom";
 import path from "./utils/path.js";
 
 function App() {
-  return (
-    <h1 class="text-3xl font-bold underline">
-      <Routes>
-        <Route path = {path.PUBLIC} element = { <Public/> }>
-          <Route path = {path.HOME} element = { <Home/> }/>
-          <Route path = {path.LOGIN} element = { <Login/> }/>
-        </Route>
-      </Routes>
-    </h1>
-  );
+    return (
+        <Routes>
+            <Route path={path.PUBLIC} element={<Public />}>
+                <Route path={path.HOME} element={<Home />} />
+                <Route path={path.LOGIN} element={<Login />} />
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;
